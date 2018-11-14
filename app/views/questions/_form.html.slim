@@ -1,5 +1,4 @@
-#new_question
+.row
   = simple_form_for @question do |f|
-    .col.s12.input-field = f.input :question, label: t('question.question')
-    .col.s12.input-field = f.input :answer, label: t('question.answer')
-    = f.submit t('form.save'), class: 'waves-effect waves-light btn'
+    .col.s12.m8.input-field = f.input :question, label: t('question.question')
+    .col.s12.m4 = f.submit t('form.save'), class: 'waves-effect waves-light btn-large'

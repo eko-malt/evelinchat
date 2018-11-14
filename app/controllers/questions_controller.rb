@@ -1,12 +1,11 @@
 class QuestionsController < ApplicationController
-  before_action :set_question, only: [:edit, :update, :destroy]
+  before_action :set_question, only: [:update, :destroy]
 
   def index
     @questions = Question.order(created_at: :desc)
+    @answers = Answer.order(created_at: :desc)
     @question = Question.new
-  end
-
-  def show
+    @answer = Answer.new
   end
 
   def update

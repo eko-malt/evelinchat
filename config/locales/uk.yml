@@ -1,6 +1,9 @@
 uk:
   question:
     question: 'Вопрос'
+    questions: 'Вопросы'
+  answer:
     answer: 'Ответ'
+    answers: 'Ответы'
   form:
     save: 'Отправить'

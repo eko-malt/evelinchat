@@ -1,0 +1,4 @@
+.row
+  = simple_form_for @answer do |f|
+    .col.s12.m8.input-field = f.input :ans, label: t('answer.answer')
+    .col.s12.m4 = f.submit t('form.save'), class: 'waves-effect waves-light btn-large'

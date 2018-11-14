@@ -1,5 +1,11 @@
-= render 'form'
+ul.collection.with-header#questions
+  li.collection-header
+    h3 = t('question.questions')
+    = render 'form'
+  = render @questions
 
-#questions
-  ul.collection
-    = render @questions
+ul.collection.with-header#answers
+  li.collection-header
+    h3 = t('answer.answers')
+    = render 'answer/form'
+  = render partial: 'answer/answer', collection: @answers
