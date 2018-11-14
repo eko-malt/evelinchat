@@ -1,6 +1,6 @@
 uk:
   question:
-    question: 'Питання'
-    answer: 'Відповідь'
+    question: 'Вопрос'
+    answer: 'Ответ'
   form:
-    save: 'Надіслати'
+    save: 'Отправить'
