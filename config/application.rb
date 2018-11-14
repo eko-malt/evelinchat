@@ -10,5 +10,8 @@ module Evelinchat
     config.i18n.default_locale = :uk
     config.time_zone = 'Kyiv'
     config.active_record.default_timezone = :local
+    config.action_dispatch.default_headers = {
+        'X-Frame-Options' => 'ALLOWALL'
+    }
   end
 end
