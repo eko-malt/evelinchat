@@ -1,5 +1,5 @@
 #new_question
-  = simple_form_for @question, remote: true do |f|
+  = simple_form_for @question do |f|
     .col.s12.input-field = f.input :question, label: t('question.question')
     .col.s12.input-field = f.input :answer, label: t('question.answer')
     = f.submit t('form.save'), class: 'waves-effect waves-light btn'
