@@ -1,5 +1,6 @@
 class QuestionsController < ApplicationController
   before_action :set_question, only: [:update, :destroy]
+  skip_before_action :verify_authenticity_token
 
   def index
     @questions = Question.order(created_at: :desc)
